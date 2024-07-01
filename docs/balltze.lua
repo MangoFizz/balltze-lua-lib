@@ -11,6 +11,14 @@ Balltze = {}
 Balltze.apiVersion = "1.1.0"
 
 -------------------------------------------------------
+-- Basic types
+-------------------------------------------------------
+
+---@class Enum
+---@field tostring fun(enum: EngineTagClassesEnum): string
+---@field tointeger fun(enum: EngineTagClassesEnum): integer
+
+-------------------------------------------------------
 -- Balltze.command
 -------------------------------------------------------
 
@@ -706,23 +714,23 @@ function Balltze.features.importTagsFromMap(mapPath) end
 function Balltze.features.clearTagImports() end
 
 -- Reloads the data of a tag
----@param tagHandleOrPath EngineTagHandle|string @The handle or path of the tag to reload
+---@param tagHandleOrPath EngineTagHandle|integer|string @The handle or path of the tag to reload
 ---@param tagClass? EngineTagClass @The class of the tag to reload
 function Balltze.features.reloadTagData(tagHandleOrPath, tagClass) end
 
 -- Replace all tag references to a tag by references to another tag
----@param tagHandle EngineTagHandle @The handle of the tag to replace
----@param newTagHandle string @The handle of the tag to replace with
+---@param tagHandle EngineTagHandle|integer @The handle of the tag to replace
+---@param newTagHandle EngineTagHandle|integer @The handle of the tag to replace with
 function Balltze.features.replaceTagReferences(tagHandle, newTagHandle) end
 
 -- Copy a tag
----@param tagHandle EngineTagHandle @The handle of the tag to copy
+---@param tagHandle EngineTagHandle|integer @The handle of the tag to copy
 ---@param copyName string @The name of the copy
 ---@return EngineTagHandle @The handle of the copy
 function Balltze.features.cloneTag(tagHandle, copyName) end
 
 -- Get a copy of a tag
----@param tagHandle EngineTagHandle @The handle of the tag to get a copy of
+---@param tagHandle EngineTagHandle|integer @The handle of the tag to get a copy of
 ---@param copyName string @The name of the copy
 ---@return EngineTagHandle|nil @The handle of the copy; nil if the copy does not exist
 function Balltze.features.getTagCopy(tagHandle, copyName) end
@@ -849,6 +857,14 @@ function Balltze.misc.getElapsedSeconds(timestamp) end
 ---@param timestamp BalltzeMiscTimestamp @The timestamp
 function Balltze.misc.resetTimestamp(timestamp) end
 
+---Set content to the clipboard
+---@param content string Content to copy
+function Balltze.misc.setClipboard(content) end
+
+---Get content from the clipboard
+---@return string Content from the clipboard
+function Balltze.misc.getClipboard() end
+
 -------------------------------------------------------
 -- Balltze.output
 -------------------------------------------------------
@@ -861,7 +877,7 @@ function Balltze.output.getGenericFont(fontName) end
 
 -- Get the number of pixels a string takes up given a font
 ---@param text string @The text to measure
----@param font EngineTagHandle @The font to use
+---@param font string|integer|EngineTagHandle @The font to use
 ---@return integer @The number of pixels the text takes up
 function Balltze.output.getTextPixelLength(text, font) end
 
