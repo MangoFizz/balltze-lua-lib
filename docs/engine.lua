@@ -66,7 +66,7 @@ Engine = {}
 ---@class MetaEngineVector3D: EngineVector3D 
 
 ---@class EngineResourceHandle
----@field handle integer
+---@field value integer
 ---@field index integer
 ---@field id integer
 
@@ -981,6 +981,16 @@ function Engine.core.getCameraData()
 end
 
 -------------------------------------------------------
+-- Engine.hsc
+-------------------------------------------------------
+
+Engine.hsc = {}
+
+-- Execute a script
+---@param script string @The script to execute
+function Engine.hsc.executeScript(script) end
+
+-------------------------------------------------------
 -- Engine.map
 -------------------------------------------------------
 
@@ -1728,6 +1738,26 @@ Engine.userInterface = {}
 ---@field bitmapIndex integer
 
 ---@class MetaEngineWidget: EngineWidget
+
+---@class EngineInputBufferedKeyModifierEnum : Enum
+---@class EngineInputBufferedKeyModifierAlt : EngineInputBufferedKeyModifierEnum
+---@class EngineInputBufferedKeyModifierCtrl : EngineInputBufferedKeyModifierEnum
+---@class EngineInputBufferedKeyModifierShift : EngineInputBufferedKeyModifierEnum
+
+---@alias EngineInputBufferedModifier
+---| EngineInputBufferedKeyModifierAlt
+---| EngineInputBufferedKeyModifierCtrl
+---| EngineInputBufferedKeyModifierShift
+
+---@class EngineInputBufferedKeyEnumTable
+---@field alt EngineInputBufferedKeyModifierAlt
+---@field ctrl EngineInputBufferedKeyModifierCtrl
+---@field shift EngineInputBufferedKeyModifierShift
+
+---@class EngineInputBufferedKey 
+---@field modifier EngineInputBufferedModifier
+---@field character integer
+---@field keycode integer
 
 ---@alias EngineWidgetNavigationSound
 ---| 'cursor'
