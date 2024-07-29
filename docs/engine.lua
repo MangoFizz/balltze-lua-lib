@@ -397,6 +397,14 @@ function Engine.userInterface.playSound(soundTagHandleOrPath) end
 ---@param soundPermutation MetaEngineTagDataSoundPermutation @The sound permutation
 function Engine.userInterface.getSoundPermutationSamplesDuration(soundPermutation) end
 
+-- Draw a bitmap in a rectangle
+---@param bitmapData MetaEngineTagDataBitmapData @The bitmap data
+---@param bitmapBounds EngineRectangle2D @The bounds of the bitmap
+---@param rect EngineRectangle2D @The rectangle to draw the bitmap
+---@param colorMask EngineColorARGBInt @The color mask to apply to the bitmap
+---@overload fun(bitmapData: MetaEngineTagDataBitmapData, rect: EngineRectangle2D, colorMask: EngineColorARGBInt)
+function Engine.userInterface.drawBitmapInRect(bitmapData, bitmapBounds, rect, colorMask) end
+
 -------------------------------------------------------
 -- Engine.renderer
 -------------------------------------------------------
