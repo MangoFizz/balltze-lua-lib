@@ -1,8 +1,3 @@
--- SPDX-License-Identifier: GPL-3.0-only
--- This file is used to document the Lua plugins engine API. It should not be included.
-
----@meta _
-
 ---@class EngineTagDataProjectileResponseEnum : Enum 
 
 ---@class EngineTagDataProjectileResponseDisappear : EngineTagDataProjectileResponseEnum 
