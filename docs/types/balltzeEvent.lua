@@ -54,7 +54,7 @@
 ---@class BalltzeGameInputEventContext
 ---@field device EngineInputDevice @The device that triggered the event
 ---@field mapped boolean @Whether the input is mapped to a game action
----@field button string @The button that was pressed
+---@field keyCode integer @Key code of the pressed button
 
 ---@class MetaBalltzeGameInputEventContext: BalltzeGameInputEventContext
 
