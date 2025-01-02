@@ -1,38 +1,38 @@
----@class EngineTagDataFlagTrailingEdgeShapeEnum : Enum 
+---@class EngineTagFlagTrailingEdgeShapeEnum : Enum 
 
----@class EngineTagDataFlagTrailingEdgeShapeFlat : EngineTagDataFlagTrailingEdgeShapeEnum 
----@class EngineTagDataFlagTrailingEdgeShapeConcaveTriangular : EngineTagDataFlagTrailingEdgeShapeEnum 
----@class EngineTagDataFlagTrailingEdgeShapeConvexTriangular : EngineTagDataFlagTrailingEdgeShapeEnum 
----@class EngineTagDataFlagTrailingEdgeShapeTrapezoidShortTop : EngineTagDataFlagTrailingEdgeShapeEnum 
----@class EngineTagDataFlagTrailingEdgeShapeTrapezoidShortBottom : EngineTagDataFlagTrailingEdgeShapeEnum 
+---@class EngineTagFlagTrailingEdgeShapeFlat : EngineTagFlagTrailingEdgeShapeEnum 
+---@class EngineTagFlagTrailingEdgeShapeConcaveTriangular : EngineTagFlagTrailingEdgeShapeEnum 
+---@class EngineTagFlagTrailingEdgeShapeConvexTriangular : EngineTagFlagTrailingEdgeShapeEnum 
+---@class EngineTagFlagTrailingEdgeShapeTrapezoidShortTop : EngineTagFlagTrailingEdgeShapeEnum 
+---@class EngineTagFlagTrailingEdgeShapeTrapezoidShortBottom : EngineTagFlagTrailingEdgeShapeEnum 
 
----@alias EngineTagDataFlagTrailingEdgeShape 
----| EngineTagDataFlagTrailingEdgeShapeFlat
----| EngineTagDataFlagTrailingEdgeShapeConcaveTriangular
----| EngineTagDataFlagTrailingEdgeShapeConvexTriangular
----| EngineTagDataFlagTrailingEdgeShapeTrapezoidShortTop
----| EngineTagDataFlagTrailingEdgeShapeTrapezoidShortBottom
+---@alias EngineTagFlagTrailingEdgeShape 
+---| EngineTagFlagTrailingEdgeShapeFlat
+---| EngineTagFlagTrailingEdgeShapeConcaveTriangular
+---| EngineTagFlagTrailingEdgeShapeConvexTriangular
+---| EngineTagFlagTrailingEdgeShapeTrapezoidShortTop
+---| EngineTagFlagTrailingEdgeShapeTrapezoidShortBottom
 
----@class EngineTagDataFlagTrailingEdgeShapeTable 
----@field peFlat EngineTagDataFlagTrailingEdgeShapeFlat
----@field peConcaveTriangular EngineTagDataFlagTrailingEdgeShapeConcaveTriangular
----@field peConvexTriangular EngineTagDataFlagTrailingEdgeShapeConvexTriangular
----@field peTrapezoidShortTop EngineTagDataFlagTrailingEdgeShapeTrapezoidShortTop
----@field peTrapezoidShortBottom EngineTagDataFlagTrailingEdgeShapeTrapezoidShortBottom
+---@class EngineTagFlagTrailingEdgeShapeTable 
+---@field peFlat EngineTagFlagTrailingEdgeShapeFlat
+---@field peConcaveTriangular EngineTagFlagTrailingEdgeShapeConcaveTriangular
+---@field peConvexTriangular EngineTagFlagTrailingEdgeShapeConvexTriangular
+---@field peTrapezoidShortTop EngineTagFlagTrailingEdgeShapeTrapezoidShortTop
+---@field peTrapezoidShortBottom EngineTagFlagTrailingEdgeShapeTrapezoidShortBottom
 Engine.tag.flagTrailingEdgeShape = {} 
 
----@class EngineTagDataFlagAttachedEdgeShapeEnum : Enum 
+---@class EngineTagFlagAttachedEdgeShapeEnum : Enum 
 
----@class EngineTagDataFlagAttachedEdgeShapeFlat : EngineTagDataFlagAttachedEdgeShapeEnum 
----@class EngineTagDataFlagAttachedEdgeShapeConcaveTriangular : EngineTagDataFlagAttachedEdgeShapeEnum 
+---@class EngineTagFlagAttachedEdgeShapeFlat : EngineTagFlagAttachedEdgeShapeEnum 
+---@class EngineTagFlagAttachedEdgeShapeConcaveTriangular : EngineTagFlagAttachedEdgeShapeEnum 
 
----@alias EngineTagDataFlagAttachedEdgeShape 
----| EngineTagDataFlagAttachedEdgeShapeFlat
----| EngineTagDataFlagAttachedEdgeShapeConcaveTriangular
+---@alias EngineTagFlagAttachedEdgeShape 
+---| EngineTagFlagAttachedEdgeShapeFlat
+---| EngineTagFlagAttachedEdgeShapeConcaveTriangular
 
----@class EngineTagDataFlagAttachedEdgeShapeTable 
----@field peFlat EngineTagDataFlagAttachedEdgeShapeFlat
----@field peConcaveTriangular EngineTagDataFlagAttachedEdgeShapeConcaveTriangular
+---@class EngineTagFlagAttachedEdgeShapeTable 
+---@field peFlat EngineTagFlagAttachedEdgeShapeFlat
+---@field peConcaveTriangular EngineTagFlagAttachedEdgeShapeConcaveTriangular
 Engine.tag.flagAttachedEdgeShape = {} 
 
 ---@class MetaEngineTagDataFlagAttachmentPoint 

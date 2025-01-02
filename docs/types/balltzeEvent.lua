@@ -29,7 +29,7 @@
 -------------------------------------------------------
 
 ---@class BalltzeCameraEventContext
----@field position EngineCameraData @The position of the camera
+---@field camera EngineCameraData @The position of the camera
 ---@field type EngineCameraType @The type of the camera
 
 ---@class MetaBalltzeCameraEventContext: BalltzeCameraEventContext
@@ -54,7 +54,7 @@
 ---@class BalltzeGameInputEventContext
 ---@field device EngineInputDevice @The device that triggered the event
 ---@field mapped boolean @Whether the input is mapped to a game action
----@field keyCode integer @Key code of the pressed button
+---@field button string @The button that was pressed
 
 ---@class MetaBalltzeGameInputEventContext: BalltzeGameInputEventContext
 
@@ -316,7 +316,7 @@
 -------------------------------------------------------
 
 ---@class BalltzeUIWidgetCreateEventContext
----@field widget MetaEngineWidget? @The widget that is being created; this field is nil if the widget is not created yet
+---@field parentWidget MetaEngineWidget? @The widget that is being created; this field is nil if the widget is not created yet
 ---@field definitionTagHandle EngineTagHandle @The tag handle of the widget definition
 ---@field isRootWidget boolean @Whether the widget is a root widget
 
